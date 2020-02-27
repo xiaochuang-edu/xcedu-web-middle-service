@@ -1,0 +1,46 @@
+{
+  "name": "xcedu-web-middle-service",
+  "version": "1.0.0",
+  "description": "晓窗科技教育一体化平台中间服务平台",
+  "main": "app.js",
+  "repository": "git@github.com:xuanhui919/xcedu-web-middle-service.git",
+  "author": "Xuan Hui(xuanhui919) <541951523@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "nodemon  --delay 2.5 app.js"
+  },
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "axios": "^0.19.2",
+    "element-ui": "^2.13.0",
+    "handlebars": "^4.7.3",
+    "koa": "^2.11.0",
+    "koa-generic-session": "^2.0.4",
+    "koa-redis": "^4.0.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.1",
+    "vue": "^2.6.11",
+    "vue-property-decorator": "^8.4.0",
+    "vue-router": "^3.1.5",
+    "vue-server-renderer": "^2.6.11",
+    "vuex": "^3.1.2",
+    "vuex-router-sync": "^5.0.0",
+    "webpack": "^4.41.6"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.8.4",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^6.0.0",
+    "gulp-uglify": "^3.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
