@@ -110,3 +110,7 @@ dist
 
 # System ffile
 .DS_store
+
+
+#remove mount file
+mount/portal
