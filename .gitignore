@@ -107,3 +107,6 @@ dist
 # idea template file
 .vscode
 .idea
+
+# System ffile
+.DS_store

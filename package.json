@@ -7,7 +7,10 @@
   "author": "Xuan Hui(xuanhui919) <541951523@qq.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "nodemon  --delay 2.5 app.js"
+    "serve": "nodemon  --delay 2.5 app.js",
+    "pm2:start": "pm2 start app.js -i 0 --name xcedu-web",
+    "pm2:stop": "pm2 stop xcedu-web",
+    "pm2:restart": "pm2 stop xcedu-web"
   },
   "dependencies": {
     "@koa/router": "^8.0.8",
@@ -41,6 +44,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-filter": "^6.0.0",
     "gulp-uglify": "^3.0.2",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "pm2": "^4.2.3"
   }
 }

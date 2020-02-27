@@ -10,6 +10,7 @@
     "public/",
     "views/",
     "utils/",
+    "config/",
     "router/",
     "app.js"
   ],

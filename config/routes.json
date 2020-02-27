@@ -2,5 +2,5 @@
   "prefix": "",
   "title": "首页",
   "paths": ["/user/login", "/"],
-  "location": "/opt/workspace/xcedu-web/xcedu-web-portal/dist"
+  "mountpoint": "portal"
 }]
