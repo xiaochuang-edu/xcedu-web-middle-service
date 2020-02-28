@@ -10,7 +10,8 @@
     "serve": "nodemon  --delay 2.5 app.js",
     "pm2:start": "pm2 start app.js -i 0 --name xcedu-web",
     "pm2:stop": "pm2 stop xcedu-web",
-    "pm2:restart": "pm2 stop xcedu-web"
+    "pm2:restart": "pm2 stop xcedu-web",
+    "pm2:docker": "pm2-runtime start app.js -i 2 --name xcedu-web"
   },
   "dependencies": {
     "@koa/router": "^8.0.8",
