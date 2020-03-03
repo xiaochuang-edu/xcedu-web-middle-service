@@ -14,11 +14,12 @@ module.exports = function ({ mountpoint, paths, title }) {
     const renderer = createBundleRenderer(resolve(__dirname, '../mount', mountpoint, 'vue-ssr-server-bundle.json'), {
       runInNewContext: false, // 推荐
       template, // （可选）页面模板
-      clientManifest // （可选）客户端构建 manifest,
+      clientManifest, // （可选）客户端构建 manifest,
+      inject: false
     })
 
     router.get(item, async ctx => {
-      const context = { url: ctx.url, title }
+      const context = { context: ctx.origin, title }
       const html = await renderer.renderToString(context)
       ctx.body = html
     })
