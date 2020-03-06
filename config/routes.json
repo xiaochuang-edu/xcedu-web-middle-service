@@ -2,5 +2,5 @@
   "prefix": "",
   "title": "首页",
   "paths": ["/user/login", "/"],
-  "mountpoint": "portal"
+  "mountpoint": "space"
 }]

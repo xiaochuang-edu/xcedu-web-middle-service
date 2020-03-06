@@ -19,7 +19,7 @@ module.exports = function ({ mountpoint, paths, title }) {
     })
 
     router.get(item, async ctx => {
-      const context = { context: ctx.origin, title }
+      const context = { context: ctx.origin, url: ctx.url, title }
       const html = await renderer.renderToString(context)
       ctx.body = html
     })
