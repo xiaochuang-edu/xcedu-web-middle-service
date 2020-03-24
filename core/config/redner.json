@@ -1,6 +1,6 @@
 [{
   "prefix": "",
   "title": "首页",
-  "paths": ["/user/login", "/"],
+  "urls": ["/user/login", "/"],
   "mountpoint": "space"
 }]

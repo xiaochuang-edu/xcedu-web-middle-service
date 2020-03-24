@@ -114,3 +114,5 @@ dist
 
 #remove mount file
 mount/**
+public/**
+tool.js

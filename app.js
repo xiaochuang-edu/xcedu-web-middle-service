@@ -1,18 +1,28 @@
 const path = require('path')
 const http = require('http')
-const fs = require('fs')
 
 const Koa = require('koa')
 const serve = require('koa-static')
 const views = require('koa-views')
+const bodyparser = require('koa-bodyparser')
+const errorHanler = require('koa-json-error')
 // const session = require('koa-generic-session')
 // const redis = require('koa-redis')
 
 // const redisConfig = require('./config/redis.json')
-const router = require('./router')
+const router = require('./core')
 
 const app = new Koa()
 
+app.use(bodyparser())
+
+app.use(errorHanler(err => {
+  return {
+    errCode: err.errCode || 500,
+    message: err.message || 'Internal Server Error',
+    data: err.data || {}
+  }
+}))
 // static some file
 app.use(serve(path.resolve(__dirname, 'public')))
 

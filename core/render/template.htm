@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link href="/common/vendor.min.js" as="script" rel="preload">
+  <link href="/common/element/element-ui.min.js" as="script" rel="preload">
+  {{{ renderResourceHints() }}}
+  <link href="/common/element/element-{{theme}}.css" rel="stylesheet" type="text/css">
+  {{{ renderStyles() }}}
+</head>
+<body>
+  <!--vue-ssr-outlet-->
+  {{{ renderState() }}}
+  <script src="/common/vendor.min.js"></script>
+  <script src="/common/element/element-ui.min.js"></script>
+  {{{ renderScripts() }}}
+</body>
+</html>

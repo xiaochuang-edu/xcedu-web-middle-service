@@ -8,10 +8,8 @@
   "script": "app.js",
   "watch": [
     "public/",
-    "views/",
     "utils/",
-    "config/",
-    "router/",
+    "core/",
     "app.js"
   ],
   "env": {
