@@ -1,0 +1,19 @@
+{
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "delay": 2500,
+  "script": "app.js",
+  "watch": [
+    "public/",
+    "views/",
+    "core/",
+    "app.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js,json"
+}
