@@ -14,7 +14,7 @@ router.get('/users/current', async ctx => {
     },
     profile: {
       layout: 'standalone',
-      theme: 'orange'
+      theme: 'blue'
     }
   }
 })
