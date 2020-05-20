@@ -29,7 +29,7 @@ const getModuleBaseUrl = name => {
 
 const loadModule = name => {
   const { style, script } = fetchFilename(getAssetRootPath(name))
-  const baseUrl = getModuleBaseUrl(name)
+  const baseUrl = process.env.NODE_ENV === 'production' ? `/${name}` : getModuleBaseUrl(name)
 
   return { moduleName: name, baseUrl, script, style }
 }
